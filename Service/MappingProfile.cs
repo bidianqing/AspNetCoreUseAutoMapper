@@ -1,14 +1,15 @@
-﻿using AspNetCoreUseAutoMapper.Domain;
-using AspNetCoreUseAutoMapper.Models;
-using AutoMapper;
+﻿using AutoMapper;
+using Domain;
 
-namespace AspNetCoreUseAutoMapper
+namespace Service
 {
     public class MappingProfile : Profile
     {
         public MappingProfile()
         {
             CreateMap<User, UserDTO>();
+            CreateMap<UserDTO, User>();
+            CreateMap<User, User>();
         }
     }
 }

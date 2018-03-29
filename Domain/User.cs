@@ -1,6 +1,8 @@
-﻿namespace AspNetCoreUseAutoMapper.Models
+﻿using System;
+
+namespace Domain
 {
-    public class UserDTO
+    public class User
     {
         public int Id { get; set; }
         public string Name { get; set; }
